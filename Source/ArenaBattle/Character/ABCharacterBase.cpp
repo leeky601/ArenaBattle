@@ -284,6 +284,7 @@ void AABCharacterBase::EquipWeapon(UABItemData* InItemData)
             WeaponItemData->WeaponMesh.LoadSynchronous();
         }
         Weapon->SetSkeletalMesh(WeaponItemData->WeaponMesh.Get());
+        Stat->SetModifierStat(WeaponItemData->ModifierStat);
     }
 }
 
